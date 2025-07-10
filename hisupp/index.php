@@ -20,4 +20,5 @@
         <p><?php esc_html_e( 'No posts found.', 'hisupp' ); ?></p>
     <?php endif; ?>
 </main><!-- #main -->
+<?php get_sidebar(); ?>
 <?php get_footer(); ?>

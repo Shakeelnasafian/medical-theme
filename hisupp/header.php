@@ -55,36 +55,14 @@
                               
                                 <div class="main-menu text-right text-xl-right">
                                     <nav id="mobile-menu">
-                                         <ul>
-                                            <li class="has-sub">
-												<a href="<?php echo home_url( "/" ); ?>">Home</a>
-											</li>
-                                            <li><a href="#ingredient">Ingredient</a></li>
-                                             <li class="has-sub"><a href="#supplement">Supplement</a>
-                                                 <ul>													
-													<li><a href="<?php echo home_url( "/shop" ); ?>">Shop</a></li>
-													<li><a href="<?php echo home_url( "/shop-details" ); ?>">Shop Details</a>
-												</li>
-												</ul>
-                                             </li>
-                                             <li><a href="#pricing">Pricing</a></li>
-                                            <li class="has-sub"> 
-                                              <a href="#introduction">Introduction</a>
-                                                
-                                            </li>
-                                           
-											<li class="has-sub"> 
-                                                <a href="#blog">Blog</a>
-                                                <ul>													
-													<li><a href="<?php echo home_url( "/blog" ); ?>">Blog</a></li>
-													<li><a href="<?php echo home_url( "/blog-details" ); ?>">Blog Details</a></li>
-												</ul>
-                                            </li>
-                                                                        
-										
-                                            <li><a href="#contact">Contact</a></li>                                               
-                                             <li><a href="#" class="btn ss-btn">Purchase Now</a></li>                                
-                                        </ul>
+                                        <?php
+                                        wp_nav_menu( array(
+                                            'theme_location' => 'primary',
+                                            'container'      => false,
+                                            'menu_class'     => '',
+                                            'fallback_cb'    => '__return_false',
+                                        ) );
+                                        ?>
                                     </nav>
                                 </div>
                             </div>   
