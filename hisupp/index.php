@@ -1,120 +1,4 @@
-<!doctype html>
-<html class="no-js" lang="zxx">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>Hisupp - Health Supplement Medicine Affiliate HTML Template</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-		<link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
-        <!-- Place favicon.ico in the root directory -->
-
-		<!-- CSS here -->
-        <link rel="stylesheet" href="css/bootstrap.min.css">
-        <link rel="stylesheet" href="css/animate.min.css">
-        <link rel="stylesheet" href="css/magnific-popup.css">
-        <link rel="stylesheet" href="fontawesome/css/all.min.css">
-        <link rel="stylesheet" href="font-flaticon/flaticon.css">
-        <link rel="stylesheet" href="css/dripicons.css">
-        <link rel="stylesheet" href="css/slick.css">
-        <link rel="stylesheet" href="css/meanmenu.css">
-        <link rel="stylesheet" href="css/default.css">
-        <link rel="stylesheet" href="css/style.css">
-        <link rel="stylesheet" href="css/responsive.css">
-    </head>
-    <body>
-     <!-- header -->
-        <header class="header-area header-area2">  
-			<div class="header-top second-header d-none d-lg-block">
-                <div class="container">
-                    <div class="row align-items-center">                                           
-                        <div class="col-lg-4 col-md-4 d-none d-lg-block">
-                             <div class="header-social">
-                            <span>
-                                <a href="#" title="Facebook"><i class="fab fa-facebook-f"></i></a>
-                                <a href="#" title="Twitter"><i class="fab fa-twitter"></i></a>
-                                <a href="#" title="behance"><i class="fab fa-behance"></i></a>
-                                <a href="#" title="youtube"><i class="fab fa-youtube"></i></a> 
-                                <a href="#" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-                                
-                               </span>                    
-                               <!--  /social media icon redux -->                               
-                        </div>
-                        </div>
-                        <div class="col-lg-8 col-md-8 d-none  d-md-block">
-                            <div class="header-cta text-right">
-                                <ul>                                   
-                                    <li>
-                                        <a href="#">info@example.com</a>
-                                    </li>
-                                     <li>
-                                       <span>786-098-098-09</span>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                         
-                        
-                    </div>
-                </div>
-            </div>		
-            <div id="header-sticky" class="menu-area pt-15 pb-15">
-                <div class="container">
-                    <div class="second-menu">
-                        <div class="row align-items-center">
-                            <div class="col-xl-2 col-lg-2">
-                                <div class="logo">
-                                    <a href="index.html"><img src="img/logo/logo.png" alt="logo"></a>
-                                </div>
-                            </div>
-                            <div class="col-xl-10 col-lg-10">
-                              
-                                <div class="main-menu text-right text-xl-right">
-                                    <nav id="mobile-menu">
-                                         <ul>
-                                            <li class="has-sub">
-												<a href="index.html">Home</a>
-											</li>
-                                            <li><a href="#ingredient">Ingredient</a></li>
-                                             <li class="has-sub"><a href="#supplement">Supplement</a>
-                                                 <ul>													
-													<li><a href="shop.html">Shop</a></li>
-													<li><a href="shop-details.html">Shop Details</a>
-												</li>
-												</ul>
-                                             </li>
-                                             <li><a href="#pricing">Pricing</a></li>
-                                            <li class="has-sub"> 
-                                              <a href="#introduction">Introduction</a>
-                                                
-                                            </li>
-                                           
-											<li class="has-sub"> 
-                                                <a href="#blog">Blog</a>
-                                                <ul>													
-													<li><a href="blog.html">Blog</a></li>
-													<li><a href="blog-details.html">Blog Details</a></li>
-												</ul>
-                                            </li>
-                                                                        
-										
-                                            <li><a href="#contact">Contact</a></li>                                               
-                                             <li><a href="#" class="btn ss-btn">Purchase Now</a></li>                                
-                                        </ul>
-                                    </nav>
-                                </div>
-                            </div>   
-                         
-                           
-                            
-                                <div class="col-12">
-                                    <div class="mobile-menu"></div>
-                                </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </header>
+<?php get_header(); ?>
         <!-- header-end -->
        
       
@@ -125,7 +9,7 @@
             <section id="home" class="slider-area slider-three fix p-relative">
                
                 <div class="slider-active">
-				<div class="single-slider slider-bg d-flex align-items-center pt-100 pb-100" style="background: url(img/slider/slider_img_bg.png) no-repeat; background-size: cover;">
+				<div class="single-slider slider-bg d-flex align-items-center pt-100 pb-100" style="background: url(<?php echo get_template_directory_uri(); ?>/assets/img/slider/slider_img_bg.png) no-repeat; background-size: cover;">
                         <div class="container">
                            <div class="row align-items-center">
                                 <div class="col-lg-7">
@@ -142,7 +26,7 @@
                                 </div>
                                 <div class="col-lg-5">
                                     <div class="slider-img" data-animation="fadeInUp" data-delay=".4s">
-                                   <img src="img/slider/slider_img05.png" alt="slider_img05">
+                                   <img src="<?php echo get_template_directory_uri(); ?>/assets/img/slider/slider_img05.png" alt="slider_img05">
                                     </div>
                                 </div>
                             </div>
@@ -216,7 +100,7 @@
                                 <h2>
                                 All Natural Ingredients
                                 </h2>
-                                <span class="line5"> <img src="img/bg/circle_left.png" alt="circle_left"></span>
+                                <span class="line5"> <img src="<?php echo get_template_directory_uri(); ?>/assets/img/bg/circle_left.png" alt="circle_left"></span>
                             </div>
                            
                         </div>
@@ -227,7 +111,7 @@
                              
                           <div class="services-box wow fadeInUp  animated mb-30"  data-delay=".4s">
                               <div class="services-icon">
-                                   <img src="img/icon/pv-icon1.png" alt="icon01">
+                                   <img src="<?php echo get_template_directory_uri(); ?>/assets/img/icon/pv-icon1.png" alt="icon01">
                                 </div>
                                <div class="services-content2">
                                     <h5>Soye Protin</h5>   
@@ -236,7 +120,7 @@
                             </div>   
                              <div class="services-box wow fadeInDown  animated mb-30"  data-delay=".5s">
                               <div class="services-icon">
-                                   <img src="img/icon/pv-icon2.png" alt="icon01">
+                                   <img src="<?php echo get_template_directory_uri(); ?>/assets/img/icon/pv-icon2.png" alt="icon01">
                                 </div>
                                <div class="services-content2">
                                     <h5>BCAA Aminos</h5>   
@@ -247,7 +131,7 @@
                         </div>
                         <div class="col-lg-4 col-md-12">
                             <div class="pro-img">
-                           <img src="img/bg/header-img.png" alt="icon01">
+                           <img src="<?php echo get_template_directory_uri(); ?>/assets/img/bg/header-img.png" alt="icon01">
                              </div>
                          
                         </div>
@@ -255,7 +139,7 @@
                              
                           <div class="services-box wow fadeInUp  animated mb-30 text-right"  data-delay=".4s">
                               <div class="services-icon">
-                                   <img src="img/icon/pv-icon3.png" alt="icon01">
+                                   <img src="<?php echo get_template_directory_uri(); ?>/assets/img/icon/pv-icon3.png" alt="icon01">
                                 </div>
                                <div class="services-content2">
                                     <h5>Multivitamin</h5>   
@@ -265,7 +149,7 @@
                         
                              <div class="services-box wow fadeInDown  animated text-right mb-30"  data-delay=".5s">
                               <div class="services-icon">
-                                   <img src="img/icon/pv-icon4.png" alt="icon01">
+                                   <img src="<?php echo get_template_directory_uri(); ?>/assets/img/icon/pv-icon4.png" alt="icon01">
                                 </div>
                                <div class="services-content2">
                                     <h5>Glutamine Added</h5>   
@@ -290,7 +174,7 @@
                                 <h2>
                                Our Supplement
                                 </h2>
-                                <span class="line5"> <img src="img/bg/circle_left.png" alt="circle_left"></span>
+                                <span class="line5"> <img src="<?php echo get_template_directory_uri(); ?>/assets/img/bg/circle_left.png" alt="circle_left"></span>
                             </div>
                            
                         </div>
@@ -302,16 +186,16 @@
                                <div class="col-lg-4 col-md-6">
                                         <div class="product mb-40">
                                             <div class="product__img">
-                                                <a href="shop-details.html"><img src="img/shop/img4.jpg" alt=""></a>
+                                                <a href="<?php echo home_url("/shop-details"); ?>"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/shop/img4.jpg" alt=""></a>
                                                 <div class="product-action text-center">
                                                    
-                                                    <a href="shop-details.html">Add Cart</a>
+                                                    <a href="<?php echo home_url("/shop-details"); ?>">Add Cart</a>
                                                     
                                                 </div>
                                             </div>
                                             <div class="product__content text-center pt-30">
                                                
-                                                <h4 class="pro-title"><a href="shop-details.html">100% Whey Protein</a></h4>
+                                                <h4 class="pro-title"><a href="<?php echo home_url("/shop-details"); ?>">100% Whey Protein</a></h4>
                                                 <div class="price">
                                                     <span>$95.00</span>
                                                     <span class="old-price">$120.00</span>
@@ -322,16 +206,16 @@
                                    <div class="col-lg-4 col-md-6">
                                         <div class="product mb-40">
                                             <div class="product__img">
-                                                <a href="shop-details.html"><img src="img/shop/img5.jpg" alt=""></a>
+                                                <a href="<?php echo home_url("/shop-details"); ?>"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/shop/img5.jpg" alt=""></a>
                                                 <div class="product-action text-center">
                                                    
-                                                    <a href="shop-details.html">Add Cart</a>
+                                                    <a href="<?php echo home_url("/shop-details"); ?>">Add Cart</a>
                                                     
                                                 </div>
                                             </div>
                                             <div class="product__content text-center pt-30">
                                                 
-                                                <h4 class="pro-title"><a href="shop-details.html">100% Whey Protein</a></h4>
+                                                <h4 class="pro-title"><a href="<?php echo home_url("/shop-details"); ?>">100% Whey Protein</a></h4>
                                                 <div class="price">
                                                     <span>$95.00</span>
                                                     <span class="old-price">$120.00</span>
@@ -342,16 +226,16 @@
                                    <div class="col-lg-4 col-md-6">
                                         <div class="product mb-40">
                                             <div class="product__img">
-                                                <a href="shop-details.html"><img src="img/shop/img6.jpg" alt=""></a>
+                                                <a href="<?php echo home_url("/shop-details"); ?>"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/shop/img6.jpg" alt=""></a>
                                                 <div class="product-action text-center">
                                                    
-                                                    <a href="shop-details.html">Add Cart</a>
+                                                    <a href="<?php echo home_url("/shop-details"); ?>">Add Cart</a>
                                                     
                                                 </div>
                                             </div>
                                             <div class="product__content text-center pt-30">
                                                
-                                                <h4 class="pro-title"><a href="shop-details.html">100% Whey Protein</a></h4>
+                                                <h4 class="pro-title"><a href="<?php echo home_url("/shop-details"); ?>">100% Whey Protein</a></h4>
                                                 <div class="price">
                                                     <span>$95.00</span>
                                                     <span class="old-price">$120.00</span>
@@ -362,16 +246,16 @@
                                    <div class="col-lg-4 col-md-6">
                                         <div class="product mb-40">
                                             <div class="product__img">
-                                                <a href="shop-details.html"><img src="img/shop/img7.jpg" alt=""></a>
+                                                <a href="<?php echo home_url("/shop-details"); ?>"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/shop/img7.jpg" alt=""></a>
                                                 <div class="product-action text-center">
                                                    
-                                                    <a href="shop-details.html">Add Cart</a>
+                                                    <a href="<?php echo home_url("/shop-details"); ?>">Add Cart</a>
                                                     
                                                 </div>
                                             </div>
                                             <div class="product__content text-center pt-30">
                                             
-                                                <h4 class="pro-title"><a href="shop-details.html">100% Whey Protein</a></h4>
+                                                <h4 class="pro-title"><a href="<?php echo home_url("/shop-details"); ?>">100% Whey Protein</a></h4>
                                                 <div class="price">
                                                     <span>$95.00</span>
                                                     <span class="old-price">$120.00</span>
@@ -382,16 +266,16 @@
                                    <div class="col-lg-4 col-md-6">
                                         <div class="product mb-40">
                                             <div class="product__img">
-                                                <a href="shop-details.html"><img src="img/shop/img4.jpg" alt=""></a>
+                                                <a href="<?php echo home_url("/shop-details"); ?>"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/shop/img4.jpg" alt=""></a>
                                                 <div class="product-action text-center">
                                                    
-                                                    <a href="shop-details.html">Add Cart</a>
+                                                    <a href="<?php echo home_url("/shop-details"); ?>">Add Cart</a>
                                                     
                                                 </div>
                                             </div>
                                             <div class="product__content text-center pt-30">
                                                 
-                                                <h4 class="pro-title"><a href="shop-details.html">100% Whey Protein</a></h4>
+                                                <h4 class="pro-title"><a href="<?php echo home_url("/shop-details"); ?>">100% Whey Protein</a></h4>
                                                 <div class="price">
                                                     <span>$95.00</span>
                                                     <span class="old-price">$120.00</span>
@@ -410,7 +294,7 @@
             <!-- product-area-end -->
             
               <!-- counter-area -->
-            <div class="counter-area pt-120 pb-90" style="background-image:url(img/bg/count-bg.jpg)">
+            <div class="counter-area pt-120 pb-90" style="background-image:url(<?php echo get_template_directory_uri(); ?>/assets/img/bg/count-bg.jpg)">
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-3 col-sm-6">
@@ -466,7 +350,7 @@
                                 <h2>
                                  Product Gallery
                                 </h2>
-                                <span class="line5"> <img src="img/bg/circle_left.png" alt="circle_left"></span>
+                                <span class="line5"> <img src="<?php echo get_template_directory_uri(); ?>/assets/img/bg/circle_left.png" alt="circle_left"></span>
                             </div>
                            
                         </div>
@@ -492,14 +376,14 @@
 				   	<div class="grid-item seo">                        	
                             <div class="case-study-box">
                               <div class="case-study-img">
-                                   <a href="projects-detail.html"><img src="img/gallery/protfolio-img01.png" alt="protfolio"></a>
+                                   <a href="projects-detail.html"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/gallery/protfolio-img01.png" alt="protfolio"></a>
                                 </div>
                             </div>
                     </div>
 					<div class="grid-item seo marketing">
                       <div class="case-study-box">
                               <div class="case-study-img">
-                                   <a href="projects-detail.html"><img src="img/gallery/protfolio-img02.png" alt="protfolio"></a>
+                                   <a href="projects-detail.html"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/gallery/protfolio-img02.png" alt="protfolio"></a>
                                 </div>
                                
                             </div>   
@@ -507,7 +391,7 @@
                      <div class="grid-item website">
                        <div class="case-study-box">
                                <div class="case-study-img">
-                                   <a href="projects-detail.html"><img src="img/gallery/protfolio-img03.png" alt="protfolio"></a>
+                                   <a href="projects-detail.html"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/gallery/protfolio-img03.png" alt="protfolio"></a>
                                 </div>
                               
                             </div>  
@@ -515,7 +399,7 @@
                      <div class="grid-item smm">
                         <div class="case-study-box">
                                <div class="case-study-img">
-                                   <a href="projects-detail.html"><img src="img/gallery/protfolio-img04.png" alt="protfolio"></a>
+                                   <a href="projects-detail.html"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/gallery/protfolio-img04.png" alt="protfolio"></a>
                                 </div>
                                
                             </div>  
@@ -523,7 +407,7 @@
                     <div class="grid-item marketing">
                       <div class="case-study-box">
                                <div class="case-study-img">
-                                   <a href="projects-detail.html"><img src="img/gallery/protfolio-img05.png" alt="protfolio"></a>
+                                   <a href="projects-detail.html"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/gallery/protfolio-img05.png" alt="protfolio"></a>
                                 </div>
                                
                             </div>  
@@ -531,7 +415,7 @@
                      <div class="grid-item seo">
                         <div class="case-study-box">
                               <div class="case-study-img">
-                                   <a href="projects-detail.html"><img src="img/gallery/protfolio-img06.png" alt="protfolio"></a>
+                                   <a href="projects-detail.html"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/gallery/protfolio-img06.png" alt="protfolio"></a>
                                 </div>
                               
                             </div>  
@@ -539,7 +423,7 @@
                     <div class="grid-item smm">
                         <div class="case-study-box ">
                                <div class="case-study-img">
-                                   <a href="projects-detail.html"><img src="img/gallery/protfolio-img07.png" alt="protfolio"></a>
+                                   <a href="projects-detail.html"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/gallery/protfolio-img07.png" alt="protfolio"></a>
                                 </div>
                               
                             </div>  
@@ -547,7 +431,7 @@
                     <div class="grid-item website">
                       <div class="case-study-box">
                                <div class="case-study-img">
-                                   <a href="projects-detail.html"><img src="img/gallery/protfolio-img08.png" alt="protfolio"></a>
+                                   <a href="projects-detail.html"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/gallery/protfolio-img08.png" alt="protfolio"></a>
                                 </div>
                               
                             </div>  
@@ -569,7 +453,7 @@
                                 <h2>
                                 Supplement Packages
                                 </h2>
-                                <span class="line5"> <img src="img/bg/circle_left.png" alt="circle_left"></span>
+                                <span class="line5"> <img src="<?php echo get_template_directory_uri(); ?>/assets/img/bg/circle_left.png" alt="circle_left"></span>
                             </div>
                            
                         </div>
@@ -580,7 +464,7 @@
                            <div class="pricing-box pricing-box2 text-center mb-60  wow fadeInLeft  animated">
                                 <div class="pricing-head">       
                                     <div class="icon mb-30">
-                                        <img src="img/icon/pr-icon1.png" alt="circle_right">
+                                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/icon/pr-icon1.png" alt="circle_right">
                                     </div>
                                     <h3>Basic</h3>   
                                    <div class="price-count">
@@ -606,7 +490,7 @@
                            <div class="pricing-box pricing-box2 active text-center mb-60  wow fadeInUp  animated">
                                 <div class="pricing-head">       
                                     <div class="icon mb-30">
-                                        <img src="img/icon/pr-icon2.png" alt="circle_right">
+                                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/icon/pr-icon2.png" alt="circle_right">
                                     </div>
                                     <h3>Standard</h3>   
                                    <div class="price-count">
@@ -632,7 +516,7 @@
                            <div class="pricing-box pricing-box2 text-center mb-60  wow fadeInRight  animated">
                                 <div class="pricing-head">       
                                     <div class="icon mb-30">
-                                        <img src="img/icon/pr-icon3.png" alt="circle_right">
+                                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/icon/pr-icon3.png" alt="circle_right">
                                     </div>
                                     <h3>Premium</h3>   
                                    <div class="price-count">
@@ -667,7 +551,7 @@
                                 <h2>
                                 Ingredients Facts
                                 </h2>
-                                <span class="line5"> <img src="img/bg/circle_left.png" alt="circle_left"></span>
+                                <span class="line5"> <img src="<?php echo get_template_directory_uri(); ?>/assets/img/bg/circle_left.png" alt="circle_left"></span>
                             </div>
                            
                         </div>
@@ -756,7 +640,7 @@
                         </div>
                         <div class="col-lg-6 col-md-6">
                               <div class="s-about-img p-relative  wow fadeInRight  animated"   data-animation="fadeInLeft" data-delay=".4s">
-                                <img src="img/features/about_img.png" alt="img">    
+                                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/features/about_img.png" alt="img">    
                             </div>
                         </div>
                       
@@ -770,7 +654,7 @@
            
             
               <!-- testimonial-area -->
-            <section class="testimonial-area pt-100 pb-100 p-relative" style="background-image:url(img/testimonial/test-bg.png); background-repeat: no-repeat; background-size: cover;background-position: center;">
+            <section class="testimonial-area pt-100 pb-100 p-relative" style="background-image:url(<?php echo get_template_directory_uri(); ?>/assets/img/testimonial/test-bg.png); background-repeat: no-repeat; background-size: cover;background-position: center;">
                 
                 <div class="container">
                     <div class="row">
@@ -780,7 +664,7 @@
                                 <h2>
                                  What Our Clients Says
                                 </h2>
-                                <span class="line5"> <img src="img/bg/circle_left.png" alt="circle_left"></span>
+                                <span class="line5"> <img src="<?php echo get_template_directory_uri(); ?>/assets/img/bg/circle_left.png" alt="circle_left"></span>
                              
                             </div>
                            
@@ -790,14 +674,14 @@
                             <div class="testimonial-active2">
                                 <div class="single-testimonial text-center">
                                     <div class="qt-img wow fadeInDown  animated" data-delay=".4s">
-                                    <img src="img/testimonial/qt-icon.png" alt="img">
+                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/testimonial/qt-icon.png" alt="img">
                                     </div>
                                     <p class=" wow fadeInUp  animated">Donec vel dictum magna, sed vehicula ipsum. Phasellus a aliquet erat. Duis luctus quis nisi vel consectetur. Ut ac neque felis. Vivamus scelerisque pretium nisi eget mollis. Morbi suscipit accumsan elit, at pellentesque ante placerat vitae. Nulla molestie tortor massa, in lacinia ex dignissim et. Nullam maximus, turpis sit amet laoreet mollis, elit lectus rutrum purus, nec accumsan felis sapien vitae leo. Mauris id tincidunt nibh, sit amet mattis felis.</p>
                                      <div class="test-line">
-                                          <img src="img/bg/test-line.png" alt="test-line"> 
+                                          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/bg/test-line.png" alt="test-line"> 
                                     </div>
                                     <div class="testi-author">
-                                        <img src="img/testimonial/testi_avatar.png" alt="img">
+                                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/testimonial/testi_avatar.png" alt="img">
                                         <div class="ta-info">
                                             <h6>Joseph Austin</h6>
                                             <span>Co-Leader</span>
@@ -807,14 +691,14 @@
                                 </div>
                                  <div class="single-testimonial text-center">
                                     <div class="qt-img wow fadeInDown  animated" data-delay=".4s">
-                                    <img src="img/testimonial/qt-icon.png" alt="img">
+                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/testimonial/qt-icon.png" alt="img">
                                     </div>
                                     <p class=" wow fadeInUp  animated">Donec vel dictum magna, sed vehicula ipsum. Phasellus a aliquet erat. Duis luctus quis nisi vel consectetur. Ut ac neque felis. Vivamus scelerisque pretium nisi eget mollis. Morbi suscipit accumsan elit, at pellentesque ante placerat vitae. Nulla molestie tortor massa, in lacinia ex dignissim et. Nullam maximus, turpis sit amet laoreet mollis, elit lectus rutrum purus, nec accumsan felis sapien vitae leo. Mauris id tincidunt nibh, sit amet mattis felis.</p>
                                       <div class="test-line">
-                                          <img src="img/bg/test-line.png" alt="test-line"> 
+                                          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/bg/test-line.png" alt="test-line"> 
                                     </div>
                                     <div class="testi-author">
-                                        <img src="img/testimonial/testi_avatar.png" alt="img">
+                                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/testimonial/testi_avatar.png" alt="img">
                                         <div class="ta-info">
                                             <h6>Margie R. Robinson</h6>
                                             <span>Web Developer</span>
@@ -824,14 +708,14 @@
                                 </div>
                                   <div class="single-testimonial text-center">
                                      <div class="qt-img wow fadeInDown  animated" data-delay=".4s">
-                                    <img src="img/testimonial/qt-icon.png" alt="img">
+                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/testimonial/qt-icon.png" alt="img">
                                     </div>
                                     <p class=" wow fadeInUp  animated">Donec vel dictum magna, sed vehicula ipsum. Phasellus a aliquet erat. Duis luctus quis nisi vel consectetur. Ut ac neque felis. Vivamus scelerisque pretium nisi eget mollis. Morbi suscipit accumsan elit, at pellentesque ante placerat vitae. Nulla molestie tortor massa, in lacinia ex dignissim et. Nullam maximus, turpis sit amet laoreet mollis, elit lectus rutrum purus, nec accumsan felis sapien vitae leo. Mauris id tincidunt nibh, sit amet mattis felis.</p>
                                        <div class="test-line">
-                                          <img src="img/bg/test-line.png" alt="test-line"> 
+                                          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/bg/test-line.png" alt="test-line"> 
                                     </div>
                                     <div class="testi-author">
-                                        <img src="img/testimonial/testi_avatar.png" alt="img">
+                                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/testimonial/testi_avatar.png" alt="img">
                                         <div class="ta-info">
                                             <h6>Margie R. Robinson</h6>
                                             <span>Web Developer</span>
@@ -855,7 +739,7 @@
                                 <h2>
                                Latest Blog & News
                                 </h2>
-                                <span class="line3"> <img src="img/bg/circle_left.png" alt="circle_left"></span>
+                                <span class="line3"> <img src="<?php echo get_template_directory_uri(); ?>/assets/img/bg/circle_left.png" alt="circle_left"></span>
                             </div>
                            
                         </div>
@@ -864,7 +748,7 @@
                         <div class="col-lg-4 col-md-12">
                             <div class="single-post2 mb-30  wow fadeInDown  animated">
                                 <div class="blog-thumb2">
-                                    <a href="blog-details.html"><img src="img/blog/blog_img01.png" alt="img"></a>
+                                    <a href="<?php echo home_url("/blog-details"); ?>"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/blog/blog_img01.png" alt="img"></a>
                                     
                                 </div>
                                 <div class="blog-content2">     
@@ -881,14 +765,14 @@
                                     
                                      <div class="row">
                                         <div class="col-lg-12">
-                                         <h4><a href="blog-details.html">How do I Sell Affiliate Products to My Customers</a></h4>    
+                                         <h4><a href="<?php echo home_url("/blog-details"); ?>">How do I Sell Affiliate Products to My Customers</a></h4>    
                                         </div>
                                     </div>
                                       <div class="b-meta">
                                        <div class="row align-items-center">
                                              <div class="col-lg-8 col-md-8">
                                              <div class="adim-box">
-                                            <div class="c-icon"><img src="img/blog/admin-img.png" alt="c-Icon.png"></div>
+                                            <div class="c-icon"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/blog/admin-img.png" alt="c-Icon.png"></div>
                                         <div class="text">  
                                            Mixlax M.
                                         </div>
@@ -909,7 +793,7 @@
                          <div class="col-lg-4 col-md-12">
                             <div class="single-post2 mb-30  wow fadeInUp  animated">
                                 <div class="blog-thumb2">
-                                    <a href="blog-details.html"><img src="img/blog/blog_img02.png" alt="img"></a>
+                                    <a href="<?php echo home_url("/blog-details"); ?>"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/blog/blog_img02.png" alt="img"></a>
                                     
                                 </div>
                                 <div class="blog-content2">     
@@ -925,7 +809,7 @@
                                     </div>
                                     <div class="row">
                                         <div class="col-lg-12">
-                                         <h4><a href="blog-details.html">How do I Sell Affiliate Products to My Customers</a></h4>    
+                                         <h4><a href="<?php echo home_url("/blog-details"); ?>">How do I Sell Affiliate Products to My Customers</a></h4>    
                                         </div>
                                     </div>
                                    
@@ -933,7 +817,7 @@
                                        <div class="row align-items-center">
                                              <div class="col-lg-8 col-md-8">
                                              <div class="adim-box">
-                                            <div class="c-icon"><img src="img/blog/admin-img.png" alt="c-Icon.png"></div>
+                                            <div class="c-icon"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/blog/admin-img.png" alt="c-Icon.png"></div>
                                         <div class="text">  
                                            Mixlax M.
                                         </div>
@@ -954,7 +838,7 @@
                          <div class="col-lg-4 col-md-12">
                             <div class="single-post2 mb-30 wow fadeInDown  animated">
                                 <div class="blog-thumb2">
-                                    <a href="blog-details.html"><img src="img/blog/blog_img03.png" alt="img"></a>
+                                    <a href="<?php echo home_url("/blog-details"); ?>"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/blog/blog_img03.png" alt="img"></a>
                                     
                                 </div>
                                 <div class="blog-content2">     
@@ -970,14 +854,14 @@
                                     </div>
                                     <div class="row">
                                         <div class="col-lg-12">
-                                         <h4><a href="blog-details.html">How do I Sell Affiliate Products to My Customers</a></h4>    
+                                         <h4><a href="<?php echo home_url("/blog-details"); ?>">How do I Sell Affiliate Products to My Customers</a></h4>    
                                         </div>
                                     </div>
                                       <div class="b-meta">
                                        <div class="row align-items-center">
                                              <div class="col-lg-8 col-md-8">
                                              <div class="adim-box">
-                                            <div class="c-icon"><img src="img/blog/admin-img.png" alt="c-Icon.png"></div>
+                                            <div class="c-icon"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/blog/admin-img.png" alt="c-Icon.png"></div>
                                         <div class="text">  
                                            Mixlax M.
                                         </div>
@@ -1001,32 +885,32 @@
             </section>
             <!-- blog-area-end -->
               <!-- brand-area -->
-            <div class="brand-area pt-60 pb-60" style="background:url(img/bg/client-bg-log.png);background-repeat: no-repeat;background-size: cover;">
+            <div class="brand-area pt-60 pb-60" style="background:url(<?php echo get_template_directory_uri(); ?>/assets/img/bg/client-bg-log.png);background-repeat: no-repeat;background-size: cover;">
                 <div class="container">
                     <div class="row brand-active">
                         <div class="col-xl-3">
                             <div class="single-brand">
-                                <img src="img/brand/c-logo1.png" alt="img">
+                                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/brand/c-logo1.png" alt="img">
                             </div>
                         </div>
                         <div class="col-xl-3">
                             <div class="single-brand">
-                                 <img src="img/brand/c-logo2.png" alt="img">
+                                 <img src="<?php echo get_template_directory_uri(); ?>/assets/img/brand/c-logo2.png" alt="img">
                             </div>
                         </div>
                         <div class="col-xl-3">
                             <div class="single-brand">
-                                 <img src="img/brand/c-logo3.png" alt="img">
+                                 <img src="<?php echo get_template_directory_uri(); ?>/assets/img/brand/c-logo3.png" alt="img">
                             </div>
                         </div>
                         <div class="col-xl-3">
                             <div class="single-brand">
-                                  <img src="img/brand/c-logo4.png" alt="img">
+                                  <img src="<?php echo get_template_directory_uri(); ?>/assets/img/brand/c-logo4.png" alt="img">
                             </div>
                         </div>
                          <div class="col-xl-3">
                             <div class="single-brand">
-                                  <img src="img/brand/c-logo4.png" alt="img">
+                                  <img src="<?php echo get_template_directory_uri(); ?>/assets/img/brand/c-logo4.png" alt="img">
                             </div>
                         </div>
                         
@@ -1041,7 +925,7 @@
                         <div class="col-lg-12">
                          <div class="section-title mb-50 text-center">   
                                 <h2>Contact Us</h2>
-                                <span class="line5"><img src="img/bg/circle_left.png" alt="circle_left"></span>
+                                <span class="line5"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/bg/circle_left.png" alt="circle_left"></span>
                             </div>
                             </div>
                       </div>
@@ -1101,121 +985,4 @@
         </main>
         <!-- main-area-end -->
         <!-- footer -->
-        <footer class="footer-bg footer-p">
-            <div class="footer-top  pt-70 pb-40">
-                <div class="container">
-                    <div class="row justify-content-between">
-                        
-                        <div class="col-xl-4 col-lg-4 col-sm-6">
-                            <div class="footer-widget mb-30">
-                                <div class="f-widget-title mb-30">
-                                   <img src="img/logo/f_logo.png" alt="img">
-                                </div>
-                                <div class="footer-link">
-                                    Aenean pulvinar laoreet tellus ut tincidunt. Praesent a lectus egestas, finibus enim sit amet, mollis lorem. Sed a volutpat velit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas proin vitae egestas erat.
-                                </div>
-                                <div class="footer-social  mt-30">                                    
-                                    <a href="#"><i class="fab fa-facebook-f"></i></a>
-                                    <a href="#"><i class="fab fa-twitter"></i></a>
-                                    <a href="#"><i class="fab fa-instagram"></i></a>
-                                    <a href="#"><i class="fab fa-google-plus-g"></i></a>
-                                </div>   
-                            </div>
-                        </div>
-						<div class="col-xl-2 col-lg-2 col-sm-6">
-                            <div class="footer-widget mb-30">
-                                <div class="f-widget-title">
-                                    <h2>About Us</h2>
-                                </div>
-                                <div class="footer-link">
-                                    <ul>                                        
-                                        <li><a href="#">Home</a></li>
-                                        <li><a href="#"> About Us</a></li>
-                                        <li><a href="#"> Services </a></li>
-                                        <li><a href="#"> Appoiment</a></li>
-                                        <li><a href="#">Blog </a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xl-2 col-lg-2 col-sm-6">
-                            <div class="footer-widget mb-30">
-                                <div class="f-widget-title">
-                                    <h2>Services</h2>
-                                </div>
-                                <div class="footer-link">
-                                    <ul>
-                                        <li><a href="#">FAQ</a></li>
-                                        <li><a href="#">Support</a></li>
-                                        <li><a href="#">Privercy</a></li>
-                                        <li><a href="#">Term & Conditions</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>  
-                        <div class="col-xl-4 col-lg-4 col-sm-6">
-                            <div class="footer-widget mb-30">
-                                <div class="f-contact">
-                                    <ul>
-                                    <li>
-                                        <i class="icon fal fa-phone"></i>
-                                        <span>1800-121-3637<br>+91-7052-101-786</span>
-                                    </li>
-                                   <li><i class="icon fal fa-envelope"></i>
-                                        <span>
-                                            <a href="mailto:info@example.com">info@example.com</a>
-                                       <br>
-                                       <a href="mailto:help@example.com">help@example.com</a>
-                                       </span>
-                                    </li>
-                                    <li>
-                                        <i class="icon fal fa-map-marker-check"></i>
-                                        <span>1247/Plot No. 39, 15th Phase, LHB Colony, Kanpur</span>
-                                    </li>
-                                    
-                                </ul>
-                                    
-                                    </div>
-                            </div>
-                        </div>
-                        
-                    </div>
-                </div>
-            </div>
-            <div class="copyright-wrap">
-                <div class="container">
-                    <div class="row align-items-center text-center">
-                        <div class="col-12">                         
-                               Copyright  &copy; 2021 Hisupp. All rights reserved.                       
-                        </div>
-                        
-                    </div>
-                </div>
-            </div>
-        </footer>
-        <!-- footer-end -->
-
-
-		<!-- JS here -->
-        <script src="js/vendor/modernizr-3.5.0.min.js"></script>
-        <script src="js/vendor/jquery-1.12.4.min.js"></script>
-        <script src="js/popper.min.js"></script>
-        <script src="js/bootstrap.min.js"></script>
-        <script src="js/one-page-nav-min.js"></script>
-        <script src="js/slick.min.js"></script>
-        <script src="js/ajax-form.js"></script>
-        <script src="js/paroller.js"></script>
-        <script src="js/wow.min.js"></script>
-        <script src="js/js_isotope.pkgd.min.js"></script>
-        <script src="js/imagesloaded.min.js"></script>
-        <script src="js/parallax.min.js"></script>
-        <script src="js/jquery.waypoints.min.js"></script>
-        <script src="js/jquery.counterup.min.js"></script>
-        <script src="js/jquery.scrollUp.min.js"></script>
-        <script src="js/jquery.meanmenu.min.js"></script>
-        <script src="js/parallax-scroll.js"></script>
-        <script src="js/jquery.magnific-popup.min.js"></script>
-        <script src="js/element-in-view.js"></script>
-        <script src="js/main.js"></script>
-    </body>
-</html>
+<?php get_footer(); ?>
