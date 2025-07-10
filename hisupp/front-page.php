@@ -181,113 +181,11 @@
                          
                     </div>
                     <div class="row">
-                         <div class="col-lg-12 col-md-12">     
-                             <div class="product-active">
-                               <div class="col-lg-4 col-md-6">
-                                        <div class="product mb-40">
-                                            <div class="product__img">
-                                                <a href="<?php echo home_url("/shop-details"); ?>"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/shop/img4.jpg" alt=""></a>
-                                                <div class="product-action text-center">
-                                                   
-                                                    <a href="<?php echo home_url("/shop-details"); ?>">Add Cart</a>
-                                                    
-                                                </div>
-                                            </div>
-                                            <div class="product__content text-center pt-30">
-                                               
-                                                <h4 class="pro-title"><a href="<?php echo home_url("/shop-details"); ?>">100% Whey Protein</a></h4>
-                                                <div class="price">
-                                                    <span>$95.00</span>
-                                                    <span class="old-price">$120.00</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                   <div class="col-lg-4 col-md-6">
-                                        <div class="product mb-40">
-                                            <div class="product__img">
-                                                <a href="<?php echo home_url("/shop-details"); ?>"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/shop/img5.jpg" alt=""></a>
-                                                <div class="product-action text-center">
-                                                   
-                                                    <a href="<?php echo home_url("/shop-details"); ?>">Add Cart</a>
-                                                    
-                                                </div>
-                                            </div>
-                                            <div class="product__content text-center pt-30">
-                                                
-                                                <h4 class="pro-title"><a href="<?php echo home_url("/shop-details"); ?>">100% Whey Protein</a></h4>
-                                                <div class="price">
-                                                    <span>$95.00</span>
-                                                    <span class="old-price">$120.00</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                   <div class="col-lg-4 col-md-6">
-                                        <div class="product mb-40">
-                                            <div class="product__img">
-                                                <a href="<?php echo home_url("/shop-details"); ?>"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/shop/img6.jpg" alt=""></a>
-                                                <div class="product-action text-center">
-                                                   
-                                                    <a href="<?php echo home_url("/shop-details"); ?>">Add Cart</a>
-                                                    
-                                                </div>
-                                            </div>
-                                            <div class="product__content text-center pt-30">
-                                               
-                                                <h4 class="pro-title"><a href="<?php echo home_url("/shop-details"); ?>">100% Whey Protein</a></h4>
-                                                <div class="price">
-                                                    <span>$95.00</span>
-                                                    <span class="old-price">$120.00</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                   <div class="col-lg-4 col-md-6">
-                                        <div class="product mb-40">
-                                            <div class="product__img">
-                                                <a href="<?php echo home_url("/shop-details"); ?>"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/shop/img7.jpg" alt=""></a>
-                                                <div class="product-action text-center">
-                                                   
-                                                    <a href="<?php echo home_url("/shop-details"); ?>">Add Cart</a>
-                                                    
-                                                </div>
-                                            </div>
-                                            <div class="product__content text-center pt-30">
-                                            
-                                                <h4 class="pro-title"><a href="<?php echo home_url("/shop-details"); ?>">100% Whey Protein</a></h4>
-                                                <div class="price">
-                                                    <span>$95.00</span>
-                                                    <span class="old-price">$120.00</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                   <div class="col-lg-4 col-md-6">
-                                        <div class="product mb-40">
-                                            <div class="product__img">
-                                                <a href="<?php echo home_url("/shop-details"); ?>"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/shop/img4.jpg" alt=""></a>
-                                                <div class="product-action text-center">
-                                                   
-                                                    <a href="<?php echo home_url("/shop-details"); ?>">Add Cart</a>
-                                                    
-                                                </div>
-                                            </div>
-                                            <div class="product__content text-center pt-30">
-                                                
-                                                <h4 class="pro-title"><a href="<?php echo home_url("/shop-details"); ?>">100% Whey Protein</a></h4>
-                                                <div class="price">
-                                                    <span>$95.00</span>
-                                                    <span class="old-price">$120.00</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                             
-                             </div>
-                         
+                        <div class="col-lg-12 col-md-12">
+                            <div class="product-active row">
+                                <?php echo do_shortcode( '[products limit="6" columns="3" ]' ); ?>
+                            </div>
                         </div>
-                       
                     </div>
                 </div>
             </section>
@@ -745,141 +643,62 @@
                         </div>
                     </div>
                     <div class="row">
+                        <?php
+                        $blog_query = new WP_Query( array(
+                            'post_type'      => 'post',
+                            'posts_per_page' => 3,
+                        ) );
+                        if ( $blog_query->have_posts() ) :
+                            while ( $blog_query->have_posts() ) : $blog_query->the_post();
+                        ?>
                         <div class="col-lg-4 col-md-12">
-                            <div class="single-post2 mb-30  wow fadeInDown  animated">
+                            <div class="single-post2 mb-30 wow fadeInUp animated">
                                 <div class="blog-thumb2">
-                                    <a href="<?php echo home_url("/blog-details"); ?>"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/blog/blog_img01.png" alt="img"></a>
-                                    
+                                    <a href="<?php the_permalink(); ?>">
+                                        <?php if ( has_post_thumbnail() ) {
+                                            the_post_thumbnail( 'full' );
+                                        } ?>
+                                    </a>
                                 </div>
-                                <div class="blog-content2">     
+                                <div class="blog-content2">
                                     <div class="b-meta">
-                                       <div class="row">
-                                             <div class="col-lg-6 col-md-6">
-                                              7 March, 2019
-                                             </div>
+                                        <div class="row">
                                             <div class="col-lg-6 col-md-6">
-                                               
-                                             </div>
-                                         </div>
-                                    </div>
-                                    
-                                     <div class="row">
-                                        <div class="col-lg-12">
-                                         <h4><a href="<?php echo home_url("/blog-details"); ?>">How do I Sell Affiliate Products to My Customers</a></h4>    
+                                                <?php echo get_the_date(); ?>
+                                            </div>
+                                            <div class="col-lg-6 col-md-6"></div>
                                         </div>
-                                    </div>
-                                      <div class="b-meta">
-                                       <div class="row align-items-center">
-                                             <div class="col-lg-8 col-md-8">
-                                             <div class="adim-box">
-                                            <div class="c-icon"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/blog/admin-img.png" alt="c-Icon.png"></div>
-                                        <div class="text">  
-                                           Mixlax M.
-                                        </div>
-                                        </div>
-                                             </div>
-                                            <div class="col-lg-4 col-md-4">
-                                               <div class="blog-btn"><a href="#">Read More</a></div>
-                                             </div>
-                                         </div>
-                                    </div>
-                                     
-                                     
-                                </div>
-                                
-                                
-                            </div>
-                        </div>
-                         <div class="col-lg-4 col-md-12">
-                            <div class="single-post2 mb-30  wow fadeInUp  animated">
-                                <div class="blog-thumb2">
-                                    <a href="<?php echo home_url("/blog-details"); ?>"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/blog/blog_img02.png" alt="img"></a>
-                                    
-                                </div>
-                                <div class="blog-content2">     
-                                    <div class="b-meta">
-                                       <div class="row">
-                                             <div class="col-lg-6 col-md-6">
-                                              7 March, 2019
-                                             </div>
-                                            <div class="col-lg-6 col-md-6">
-                                               
-                                             </div>
-                                         </div>
                                     </div>
                                     <div class="row">
                                         <div class="col-lg-12">
-                                         <h4><a href="<?php echo home_url("/blog-details"); ?>">How do I Sell Affiliate Products to My Customers</a></h4>    
+                                            <h4><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h4>
                                         </div>
                                     </div>
-                                   
-                                      <div class="b-meta">
-                                       <div class="row align-items-center">
-                                             <div class="col-lg-8 col-md-8">
-                                             <div class="adim-box">
-                                            <div class="c-icon"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/blog/admin-img.png" alt="c-Icon.png"></div>
-                                        <div class="text">  
-                                           Mixlax M.
-                                        </div>
-                                        </div>
-                                             </div>
-                                            <div class="col-lg-4 col-md-4">
-                                               <div class="blog-btn"><a href="#">Read More</a></div>
-                                             </div>
-                                         </div>
-                                    </div>
-                                     
-                                     
-                                </div>
-                                
-                                
-                            </div>
-                        </div>
-                         <div class="col-lg-4 col-md-12">
-                            <div class="single-post2 mb-30 wow fadeInDown  animated">
-                                <div class="blog-thumb2">
-                                    <a href="<?php echo home_url("/blog-details"); ?>"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/blog/blog_img03.png" alt="img"></a>
-                                    
-                                </div>
-                                <div class="blog-content2">     
                                     <div class="b-meta">
-                                       <div class="row">
-                                             <div class="col-lg-6 col-md-6">
-                                              7 March, 2019
-                                             </div>
-                                            <div class="col-lg-6 col-md-6">
-                                               
-                                             </div>
-                                         </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-lg-12">
-                                         <h4><a href="<?php echo home_url("/blog-details"); ?>">How do I Sell Affiliate Products to My Customers</a></h4>    
-                                        </div>
-                                    </div>
-                                      <div class="b-meta">
-                                       <div class="row align-items-center">
-                                             <div class="col-lg-8 col-md-8">
-                                             <div class="adim-box">
-                                            <div class="c-icon"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/blog/admin-img.png" alt="c-Icon.png"></div>
-                                        <div class="text">  
-                                           Mixlax M.
-                                        </div>
-                                        </div>
-                                             </div>
+                                        <div class="row align-items-center">
+                                            <div class="col-lg-8 col-md-8">
+                                                <div class="adim-box">
+                                                    <div class="c-icon">
+                                                        <?php echo get_avatar( get_the_author_meta( 'ID' ), 32 ); ?>
+                                                    </div>
+                                                    <div class="text">
+                                                        <?php the_author(); ?>
+                                                    </div>
+                                                </div>
+                                            </div>
                                             <div class="col-lg-4 col-md-4">
-                                               <div class="blog-btn"><a href="#">Read More</a></div>
-                                             </div>
-                                         </div>
+                                                <div class="blog-btn"><a href="<?php the_permalink(); ?>"><?php esc_html_e( 'Read More', 'hisupp' ); ?></a></div>
+                                            </div>
+                                        </div>
                                     </div>
-                                     
-                                     
                                 </div>
-                                
-                                
                             </div>
                         </div>
-                        
+                        <?php
+                            endwhile;
+                            wp_reset_postdata();
+                        endif;
+                        ?>
                     </div>
                 </div>
             </section>
