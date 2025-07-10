@@ -27,12 +27,14 @@
                         </div>
                         <div class="col-lg-8 col-md-8 d-none  d-md-block">
                             <div class="header-cta text-right">
-                                <ul>                                   
+                                <ul>
                                     <li>
-                                        <a href="#">info@example.com</a>
+                                        <a href="mailto:<?php echo antispambot( get_option( 'admin_email' ) ); ?>">
+                                            <?php echo antispambot( get_option( 'admin_email' ) ); ?>
+                                        </a>
                                     </li>
-                                     <li>
-                                       <span>786-098-098-09</span>
+                                    <li>
+                                        <span><?php echo esc_html( get_theme_mod( 'phone_number', '786-098-098-09' ) ); ?></span>
                                     </li>
                                 </ul>
                             </div>
@@ -48,7 +50,9 @@
                         <div class="row align-items-center">
                             <div class="col-xl-2 col-lg-2">
                                 <div class="logo">
-                                    <a href="<?php echo home_url( "/" ); ?>"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/logo/logo.png" alt="logo"></a>
+                                    <?php if ( has_custom_logo() ) { the_custom_logo(); } else { ?>
+                                        <a href="<?php echo esc_url( home_url( '/' ) ); ?>"><?php bloginfo( 'name' ); ?></a>
+                                    <?php } ?>
                                 </div>
                             </div>
                             <div class="col-xl-10 col-lg-10">

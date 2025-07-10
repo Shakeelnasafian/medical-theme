@@ -54,9 +54,17 @@ function hisupp_theme_setup() {
     add_theme_support( 'wc-product-gallery-lightbox' );
     add_theme_support( 'wc-product-gallery-slider' );
 
+    add_theme_support( 'custom-logo', array(
+        'height'      => 40,
+        'width'       => 180,
+        'flex-width'  => true,
+        'flex-height' => true,
+    ) );
+
     register_nav_menus( array(
         'primary' => __( 'Primary Menu', 'hisupp' ),
         'footer'  => __( 'Footer Menu', 'hisupp' ),
+        'social'  => __( 'Social Menu', 'hisupp' ),
     ) );
 }
 add_action( 'after_setup_theme', 'hisupp_theme_setup' );
@@ -83,3 +91,17 @@ function hisupp_widgets_init() {
     }
 }
 add_action( 'widgets_init', 'hisupp_widgets_init' );
+
+function hisupp_customize_register( $wp_customize ) {
+    $wp_customize->add_setting( 'phone_number', array(
+        'default'           => '786-098-098-09',
+        'sanitize_callback' => 'sanitize_text_field',
+    ) );
+
+    $wp_customize->add_control( 'phone_number', array(
+        'label'   => __( 'Phone Number', 'hisupp' ),
+        'section' => 'title_tagline',
+        'type'    => 'text',
+    ) );
+}
+add_action( 'customize_register', 'hisupp_customize_register' );
