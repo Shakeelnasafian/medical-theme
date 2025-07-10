@@ -6,6 +6,7 @@ get_header();
         <?php do_action( 'woocommerce_before_main_content' ); ?>
 
         <?php if ( woocommerce_product_loop() ) : ?>
+            <div class="row">
             <?php woocommerce_product_loop_start(); ?>
 
             <?php if ( wc_get_loop_prop( 'total' ) ) : ?>
@@ -15,6 +16,7 @@ get_header();
             <?php endif; ?>
 
             <?php woocommerce_product_loop_end(); ?>
+            </div>
 
             <?php do_action( 'woocommerce_after_shop_loop' ); ?>
         <?php else : ?>
